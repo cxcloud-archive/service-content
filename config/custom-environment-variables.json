@@ -1,0 +1,8 @@
+{
+  "contentful": {
+    "sdkConfig": {
+      "space": "CONTENTFUL_SPACE",
+      "accessToken": "CONTENTFUL_ACCESS_KEY"
+    }
+  }
+}

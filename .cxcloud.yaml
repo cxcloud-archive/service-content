@@ -9,3 +9,13 @@ deployment:
   env:
     - name: NODE_ENV
       value: production
+    - name: CONTENTFUL_SPACE
+      valueFrom:
+        secretKeyRef:
+          name: prod-contentful
+          key: space
+    - name: CONTENTFUL_ACCESS_KEY
+      valueFrom:
+        secretKeyRef:
+          name: prod-contentful
+          key: accessToken
